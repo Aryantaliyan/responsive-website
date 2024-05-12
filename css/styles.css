@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    background-image: url(images/bkg-light.jpg);
+    /* background-color: black; */
+    background-size: 50%;
+    /* opacity: 60%; */
+}
+body{
+    font-family: "Mulish", sans-serif;
+    overflow: hidden;
+
+}
+
+.grid-container{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#logo{
+    color: white;
+    line-height: 60px;
+    font-size: 20px;
+    margin: 20px 150px;
+    margin-left: 20px;
+    /* margin-right: 250px; */
+    font-weight: bold;
+
+}
+
+nav .menu-btn i{
+    color: white;
+    font-size: 20px;
+    float: right;
+    display:none;
+}
+
+nav{
+    /* background-color: rgb(58, 10, 103); */
+    height: 60px;
+    border: 1px solid red;
+    border-radius: 20px;
+    margin: 10px auto;
+    /* width: max-content; */
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: overline;
+}
+
+
+
+.main{
+    flex: 1;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.main h1{
+    color: white;
+    /* margin: auto; */
+    width: 50%;
+    width: max-content;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px red;
+   
+ }
+ .main p{
+    color: rgb(255, 255, 255);
+    /* margin: auto; */
+    width: 50%;
+    width: max-content;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 60px;
+    text-shadow: 1px 1px 1px red;
+   
+ }
+
+ .share{
+    margin: 0px 50vh;
+    width: 50%;
+    /* width: max-content; */
+    /* line-height: 60px; */
+    text-align: center;
+ 
+  }
+  .share a{
+    font-size: 30px;
+    color: rgb(107, 106, 106);
+    padding-top: 10px;
+    margin: 15px;
+  }
+ 
+  .share a:hover{
+    /* color: rgb(135, 227, 241); */
+    color: red;
+  }
+
+footer{
+    /* background-color: yellow; */
+    margin-top: auto;
+}
+
+footer{
+    text-align: center;
+    color: rgb(107, 106, 106);
+    padding: 15px;
+    font-size: 15px;
+    opacity: 70%;
+   
+ }
+ 
+ 
+footer span{
+    color: red;
+ }
+
+ #click{
+    display: none;
+ }
+
+ @media  only screen and (max-width: 647px)
+{
+    #logo{
+        margin-right: 100px;
+    }
+} 
+ @media  only screen and (max-width: 575px)
+{
+    nav{
+        /* border: none; */
+        text-align: center;
+        height: max-content;
+    }
+    #logo{
+        /* display: block; */
+        margin: 0px 20px;
+        position: relative;
+        font-size: 20px;
+    }
+
+    nav .menu-btn i{
+        display: inline;
+        float: none;
+        margin-right:20px;
+    }
+    #click:checked ~ ul{
+        display: block;
+    }
+    #click:checked ~ .menu-btn {
+        display: block;
+        /* float: right; */
+    }
+    
+    nav ul {
+        text-align: center;
+        padding: 0%;
+        margin:10px;
+        display: none;
+
+    }
+    nav ul li a  {
+        border: 1px solid skyblue;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover{
+        border: 1px solid yellow;
+        color: yellow;
+
+    }
+    .main h1{
+        font-size:40px;
+    }
+    .main p{
+        font-size: 15px;
+    }
+
+    .share a{
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+
+} 
+
